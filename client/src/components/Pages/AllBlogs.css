@@ -1,0 +1,57 @@
+/* AllBlogs.css */
+
+.AllBlog-my-blogs-container {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .AllBlog-blog-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .AllBlog-blog-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-top: 9px solid #333; /* Top border */
+    border-left: 9px solid #333; /* Left border */
+    margin-top: 50px;
+  }
+  
+  .AllBlog-blog-title {
+    font-size: 25px;
+    color: black; /* Dark grey/black text */
+    padding-top: 15px;
+  }
+  
+  .AllBlog-blog-content {
+    font-size: 23px;
+    color: black; /* Medium grey text */
+    padding-top: 15px;
+  }
+  
+  .AllBlog-blog-category {
+    font-size: 27px;
+    color: black;/* Lighter grey text */
+    padding-top: 15px;
+  }
+  
+  .AllBlog-blog-author,
+  .AllBlog-blog-date {
+    font-size: 25px;
+    color: black; /* Light grey text */
+    padding-top: 15px;
+  }
+  
+  .AllBlog-no-blogs {
+    font-size: 1.2em;
+    color: #777;
+  }
+  .AllBlog-like-button{
+    background-color: #000000;
+    color: white;
+  }

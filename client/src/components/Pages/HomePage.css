@@ -1,0 +1,27 @@
+.HomePageClass {
+    display: flex;
+   align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+    margin-left:-800px;
+    margin-top: 50px;
+    line-height: 0.5;
+    height: 525px;
+  }
+  
+  .welcomenote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .welcome {
+    font-size: 75px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .bloggy {
+    font-size: 150px; /* Even larger size */
+    font-weight: bold;
+    color: #ff6600;
+  }

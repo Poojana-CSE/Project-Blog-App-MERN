@@ -1,0 +1,146 @@
+.regMain {
+    margin-left: 650px;
+    margin-top: 175px;
+  }
+  
+  .regForm {
+    background-color: #ffffff;
+    height: 550px;
+    width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 3px 3px black;
+    position: relative; /* Make the form a positioned container */
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .regHead h4 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 50px;
+    font-family: cursive;
+  }
+  
+  .regElements {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 15px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .reglabel {
+    text-align: center;
+    font-size: 25px;
+    color: #666666;
+    margin-bottom: 50px;
+    font-family: cursive;
+    font-weight: 900;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  
+  .reginput {
+    height: 25px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 50px;
+  }
+  
+  .reginput::placeholder {
+    color: #aaaaaa;
+  }
+  
+  .regSubmit .regButton {
+    width: 150px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: -550px;
+  }
+  
+  .regSubmit .regButton:hover {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+  }
+  
+  .regMessage {
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+  }
+  
+  .regNavigate {
+    margin-top: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* Cross Button */
+  .closeButton {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+    position: absolute; /* Position relative to the form */
+    top: 10px; /* Adjust for padding inside the form */
+    right: 10px; /* Align to the right corner */
+    background: transparent; /* No background */
+    border: none; /* No border */
+  }
+  
+  .closeButton:hover {
+    color: white; /* Highlight on hover */
+  }
+  
+  /* Zoom-in effect for the Registration form */
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-out effect for the Login form */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Apply the animations to the regForm */
+  .regForm {
+    animation: zoomIn 0.5s ease-in-out forwards;
+  }
+  
+  /* When transitioning to Login Page, apply fade-out */
+  .fadeOut {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+  
+  

@@ -1,0 +1,87 @@
+
+.subpage-container {
+    background-color: #f9f9f9;
+    padding: 0px;
+    border-radius: 8px;
+    height: 1000px;
+  }
+  
+  /* Heading style */
+  .subpage-heading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 75px;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input group styles */
+  .subpage-input-group {
+    margin-bottom: 15px;
+  }
+  
+  .subpage-label {
+    margin-top: 25px;
+    margin-left: 600px;
+    display: block;
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+    margin-top: 25px;
+  }
+  
+  .subpage-input,
+  .subpage-textarea {
+    margin-top: 55px;
+    margin-left: 650px;
+    width: 40%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounded corners */
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  .subpage-input {
+    margin-bottom: 10px;
+  }
+  
+  .subpage-textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  /* Button styles */
+  .subpage-button {
+    margin-top: 25px;
+    width: 20%;
+    padding: 12px;
+    margin-top: 50px;
+    background-color: #000000;
+    color: white;
+    font-size: 1.1rem;
+    border: 3px solid #000000;
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 800px;
+    margin-bottom: 50px;
+  }
+  
+  .subpage-button:hover {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+  }
+  
+  /* Footer styles */
+  .subpage-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  

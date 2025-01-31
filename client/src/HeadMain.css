@@ -1,0 +1,42 @@
+.mainhead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+  }
+  
+  .mp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .check .h {
+    font-size: 50px;
+    color: black;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .mainheadelements .mainhomeul {
+    list-style: none;
+    display: flex;
+    gap: 100px; 
+    margin-left: 700px;
+    cursor: pointer;
+  }
+  
+  .mainheadelements .mainhomepage {
+    margin-top: -75px;
+    font-size: 25px;
+    font-family: cursive;
+  }
+  
+  hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid black; /* Light gray line */
+    margin: 10px 0;
+  }
+  

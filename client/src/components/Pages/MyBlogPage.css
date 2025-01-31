@@ -1,0 +1,148 @@
+/* MyBlogPage.css */
+
+.myblog-container {
+    background-color: white;
+    color: #333; /* Default text color */
+    font-family: Arial, sans-serif;
+  }
+  
+  .myblog-my-blogs-container {
+    padding: 20px;
+    
+  }
+  
+  .myblog-blog-list {
+    list-style-type: none;
+    padding: 0;
+    
+  }
+  
+  .myblog-blog-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Slight grey background */
+    height: 350px;
+    width: 70%;
+    height: 650px;
+    
+  }
+  
+  .myblog-blog-title {
+    font-size: 25px;
+    color: black; /* Dark grey/black text */
+    padding-top: 15px;
+  }
+  
+  .myblog-blog-content {
+    font-size: 23px;
+    color: black; /* Medium grey text */
+    padding-top: 15px;
+  }
+  
+  .myblog-blog-category {
+    font-size: 27px;
+    color: black;/* Lighter grey text */
+    padding-top: 15px;
+  }
+  
+  .myblog-blog-author,
+  .myblog-blog-date {
+    font-size: 25px;
+    color: black; /* Light grey text */
+    padding-top: 15px;
+  }
+  
+  .myblog-external-link {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    padding-top: 15px;
+  }
+  
+  .myblog-external-link:hover {
+    text-decoration: underline;
+  }
+  
+  .myblog-edit-button,
+  .myblog-delete-button,
+  .myblog-save-button,
+  .myblog-cancel-button {
+    width: 150px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .myblog-delete-button{
+    margin-top: 18px;
+  }
+  
+  .myblog-edit-button:hover,
+  .myblog-delete-button:hover,
+  .myblog-save-button:hover,
+  .myblog-cancel-button:hover {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+  }
+  
+  .myblog-no-blogs {
+    font-size: 1.2em;
+    color: #777; /* Light grey for no blogs found message */
+    height: 500px;
+  }
+  
+  .myblog-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  
+  .myblog-edit-form input,
+  .myblog-edit-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 23px;
+    width: 80%;
+  }
+  
+  .myblog-edit-form textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  .myblog-save-button,
+  .myblog-cancel-button {
+    width: 100px;
+    margin-top: 10px;
+  }
+  .myblog-cancel-delete{
+    padding: 5px;
+    margin-left: 15px;
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    border-radius: 50px;
+  }
+  .myblog-confirm-delete{
+    padding: 5px;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+  border-radius: 50px;
+  }
+  
+  .myblog-deletelabel{
+    border-radius: 10px;
+    height: 20px;
+  }
