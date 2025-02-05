@@ -16,7 +16,7 @@ const LoginPage = ({setProfilename}) => {
     async function login(e) {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:8000/login', {
+            const response = await fetch('https://blogpageserver.onrender.com/login', {
                 method: 'POST',
                 body: JSON.stringify({ username: userName, password }),
                 headers: { 'Content-Type': 'application/json' },

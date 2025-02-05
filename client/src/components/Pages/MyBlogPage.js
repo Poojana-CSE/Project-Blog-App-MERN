@@ -19,7 +19,7 @@ const MyBlogPage = ({ author }) => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/myblogs/${author}`);
+        const response = await fetch(`https://blogpageserver.onrender.com/myblogs/${author}`);
         if (response.ok) {
           const data = await response.json();
           setBlogs(data.blogs);
@@ -36,7 +36,7 @@ const MyBlogPage = ({ author }) => {
   const deleteBlog = async () => {
     if (deleteUsername === blogToDelete.author) {
       try {
-        const response = await fetch(`http://localhost:8000/myblogs/delete/${blogToDelete._id}`, { method: 'DELETE' });
+        const response = await fetch(`https://blogpageserver.onrender.com/myblogs/delete/${blogToDelete._id}`, { method: 'DELETE' });
         if (response.ok) {
           setBlogs(blogs.filter(blog => blog._id !== blogToDelete._id));
           setAlertMessage('Blog deleted successfully');
@@ -70,7 +70,7 @@ const MyBlogPage = ({ author }) => {
 
   const updateBlog = async (id) => {
     try {
-      const response = await fetch(`http://localhost:8000/myblogs/update/${id}`, {
+      const response = await fetch(`https://blogpageserver.onrender.com/myblogs/update/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updateData),

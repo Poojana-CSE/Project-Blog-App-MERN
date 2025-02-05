@@ -10,7 +10,7 @@ const AllBlogs = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/blogs/`);
+        const response = await fetch(`https://blogpageserver.onrender.com/blogs/`);
         const data = await response.json();
         setBlogs(data.blogs);
       } catch (error) {

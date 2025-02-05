@@ -11,17 +11,15 @@ const cors = require('cors');
 const bcrypt = require('bcrypt'); 
 
 // Mongo DB URL
-const url = "mongodb://localhost:27017/";
-
-// Database Name
-const db = 'MyBlog';
+const url = "mongodb+srv://poojana_s:Poojana2212@poojana.frp42.mongodb.net/MyBlog";
+ 
 
 // Call Express
 const App = express();
 
 // Call Cors
 App.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://project-blog-app-mern.vercel.app/',
     credentials: true
 }));
 
@@ -150,28 +148,7 @@ App.get('/myblogs/:author', async (req, res) => {
 
 
 // Delete
-// Delete Blog with username confirmation
-// Delete Blog Route
-const deleteBlog = async (id, author) => {
-    const username = prompt("Enter the username to delete:");
-  
-    if (username === author) {
-      try {
-        const response = await fetch(`http://localhost:8000/myblogs/delete/${id}`, { method: 'DELETE' });
-        if (response.ok) {
-          const result = await response.json();
-          alert(result.message);
-          setBlogs(blogs.filter(blog => blog._id !== id));
-        } else {
-          console.log('Failed to delete blog');
-        }
-      } catch (error) {
-        console.error('Error deleting blog:', error);
-      }
-    } else {
-      alert('Username does not match. Blog not deleted.');
-    }
-  };
+
   
 
   
@@ -200,8 +177,8 @@ App.put('/myblogs/update/:id', async (req, res) => {
     }
 });
 
-
+const port = process.env.PORT || 8000; 
 // Port Register
-App.listen(8000, () => {
-    console.log("Server Started, http://localhost:8000");
+App.listen(port, () => {
+    console.log("Server Started at port "+port +" successfully");
 });
