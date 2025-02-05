@@ -20,7 +20,7 @@ const App = express();
 // Call Cors
 App.use(cors({
     origin: 'https://project-blog-app-mern.vercel.app',
-    credentials: true
+    credentials: false
 }));
 
 // Use JSON
