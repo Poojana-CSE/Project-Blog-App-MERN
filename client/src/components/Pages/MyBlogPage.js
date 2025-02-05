@@ -3,7 +3,7 @@ import HeadMain from '../../HeadMain';
 import Footer from '../../Footer';
 import './MyBlogPage.css';
 
-const MyBlogPage = (Author) => {
+const MyBlogPage = (AuthorPoojana) => {
   const Author = window.localStorage.getItem('author');
   const [blogs, setBlogs] = useState([]);
   const [editBlog, setEditBlog] = useState(null);
