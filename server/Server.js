@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
 const url = "mongodb+srv://poojana_s:Poojana2212@poojana.frp42.mongodb.net/MyBlog";
 
 const App = express();
-App.use(cors({origin: 'https://project-blog-app-mern.vercel.app', credentials: false}));
+App.use(cors({origin: ['https://project-blog-app-mern.vercel.app','http://localhost:3000'], credentials: false}));
 App.use(express.json());
 
 mongoose.connect(url).then(()=>{
