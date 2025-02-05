@@ -14,6 +14,7 @@ const App = () => {
   const [profilename,setProfilename]=useState("")
   useEffect(()=>{
     console.log('proile name updated',profilename)
+    window.localStorage.setItem('author',profilename);
   },
 [profilename])
   return (

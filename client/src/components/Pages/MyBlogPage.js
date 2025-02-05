@@ -3,7 +3,8 @@ import HeadMain from '../../HeadMain';
 import Footer from '../../Footer';
 import './MyBlogPage.css';
 
-const MyBlogPage = ({ author }) => {
+const MyBlogPage = (Author) => {
+  const Author = window.localStorage.getItem('author');
   const [blogs, setBlogs] = useState([]);
   const [editBlog, setEditBlog] = useState(null);
   const [updateData, setUpdateData] = useState({
@@ -19,7 +20,7 @@ const MyBlogPage = ({ author }) => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch(`https://blogpageserver.onrender.com/myblogs/${author}`);
+        const response = await fetch(`https://blogpageserver.onrender.com/myblogs/${Author}`);
         if (response.ok) {
           const data = await response.json();
           setBlogs(data.blogs);
@@ -31,10 +32,10 @@ const MyBlogPage = ({ author }) => {
       }
     };
     fetchBlogs();
-  }, [author]);
+  }, [Author]);
 
   const deleteBlog = async () => {
-    if (deleteUsername === blogToDelete.author) {
+    if (deleteUsername === blogToDelete.Author) {
       try {
         const response = await fetch(`https://blogpageserver.onrender.com/myblogs/delete/${blogToDelete._id}`, { method: 'DELETE' });
         if (response.ok) {
@@ -113,7 +114,7 @@ const MyBlogPage = ({ author }) => {
                     <h3 className="myblog-blog-title">{blog.title}</h3>
                     <p className="myblog-blog-content">{blog.content}</p>
                     <p className="myblog-blog-category"><em>{blog.category}</em></p>
-                    <p className="myblog-blog-author">Author: {blog.author}</p>
+                    <p className="myblog-blog-Author">Author: {blog.Author}</p>
                     <p className="myblog-blog-date">Posted on: {new Date(blog.createdAt).toLocaleDateString()}</p>
                     {blog.externalLink && <p><a className="myblog-external-link" href={blog.externalLink} target="_blank" rel="noopener noreferrer">External Link</a></p>}
                     <button className="myblog-edit-button" onClick={() => startEditing(blog)}>Edit</button>
