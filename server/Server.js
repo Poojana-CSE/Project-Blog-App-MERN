@@ -12,14 +12,14 @@ const bcrypt = require('bcrypt');
 
 // Mongo DB URL
 const url = "mongodb+srv://poojana_s:Poojana2212@poojana.frp42.mongodb.net/MyBlog";
- 
+
 
 // Call Express
 const App = express();
 
 // Call Cors
 App.use(cors({
-    origin: 'https://project-blog-app-mern.vercel.app/',
+    origin: 'https://project-blog-app-mern.vercel.app',
     credentials: true
 }));
 
